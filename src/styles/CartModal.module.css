@@ -1,0 +1,81 @@
+.cartModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(8, 8, 8);
+    overflow: hidden;
+}
+
+.itemContainer {
+    margin-block: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.cartCard {
+    /* display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    /* margin-block: 1rem; */
+    /* background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3rem;
+    z-index: 140;
+    pointer-events: all;  */
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    background-color: #fff;
+    padding: 1rem;
+    font-family: 'Unbounded', sans-serif;
+    border: 0.4rem solid #000;
+    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
+}
+
+.total {
+    width: 80%;
+    margin-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 1.4rem;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    border: 0.3rem solid var(--secondary-color);
+}
+
+.totalText {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-inline: 1rem;
+
+}
+
+.totalPrice {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-inline: 1rem;
+}
+
+.removeBtn{
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.image {
+    height: 65%;
+    object-fit: contain;
+}
+
+h1,h3{
+    margin: 10px 0;
+}
