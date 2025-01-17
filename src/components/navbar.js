@@ -4,14 +4,14 @@ import logo from "../images/easy-buy-logo.jpg"
 import { useValue } from "../productContext";
 
 function Navbar() {
-  const {login, logout,setSearch, search} = useValue();
+  const {login, logout,setSearch} = useValue();
   // console.log(URL.name)
   return (
     <>
       <div className={styles.container}>
 
         <div className={styles.logoWrapper}>
-          <img src={logo} className={styles.logo} />
+          <img src={logo} className={styles.logo} alt="Logo" />
         </div>
 
         <div className={styles.links}>

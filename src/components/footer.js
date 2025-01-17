@@ -9,7 +9,7 @@ function Footer() {
   return (
     <>
       <div className={styles.footer}>
-        <img src={logo} />
+        <img src={logo} alt="Logo"/>
 
         <div className={styles.sections}>
         <div className={styles.section1}>
