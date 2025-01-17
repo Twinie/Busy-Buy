@@ -14,12 +14,11 @@ export default function Signin(){
 
     return(
         <>
+        <div className={styles.signinFrom}>
         <h1>Sign In!</h1>
-        <div className="section">
-
         {/* Form for signin */}
-            <form onSubmit={handleSubmit}>
-                <Row label="">
+            <form onSubmit={handleSubmit} >
+                <Row formLabel="Email">
                         <input className="input content"
                                 placeholder="Enter Email"
                                 ref={titleRef}
@@ -29,7 +28,7 @@ export default function Signin(){
                         />
                 </Row >
          
-                <Row label="">
+                <Row formLabel="Password">
                         <input className="input password"
                                 placeholder="Enter Password"
                                 required
@@ -39,10 +38,14 @@ export default function Signin(){
                 </Row >
                 <br/>
                 <br/>
-                <button className = "btn">Sign In</button>
-                <Link to="/signup" className={styles.buttonsWrapper}>
-                    <h4 className={styles.button}>Sign up instead</h4>
-                </Link>
+                <div className={styles.signBtn}>
+                   <button className={styles.button}>Sign In</button>
+
+                   <Link to="/signup" className={styles.signUpBtn} >
+                    <h4 >Sign up instead</h4>
+                   </Link>
+                </div>
+               
             </form>
                      
         </div>
@@ -52,12 +55,13 @@ export default function Signin(){
     }
     //Row component to introduce a new row section in the form
 function Row(props){
-    const{label} = props;
+    const{formLabel} = props;
     return(
         <>
-        <label>{label}<br/></label>
+        <label>{formLabel}<br/></label>
         <br/>
         {props.children}
+        <br/><br/>
         </>
     )
 }

@@ -2,42 +2,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgb(8, 8, 8);
+    color: #9b5221;
     overflow: hidden;
 }
 
 .itemContainer {
-    margin-block: 1rem;
+    margin: 40px 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     /* flex-direction: column; */
 }
 
 .cartCard {
-    /* display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    position: relative;
-    /* margin-block: 1rem; */
-    /* background-color: var(--secondary-color);
-    color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 3rem;
-    z-index: 140;
-    pointer-events: all;  */
-    margin: 1rem;
+    margin: 3rem;
     display: flex;
     flex-direction: column;
     min-width: 20rem;
     background-color: #fff;
     padding: 1rem;
     font-family: 'Unbounded', sans-serif;
-    border: 0.4rem solid #000;
-    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
+    border: 0.2rem solid #fb9752;
+    border-radius: 20px;
+    box-shadow: -1px -2px 8px #fb9752;
 }
 
 .total {
@@ -46,11 +33,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border-radius: 10px;
     padding: 1rem 1.4rem;
     color: var(--primary-color);
     background-color: var(--accent-color);
-    border: 0.3rem solid var(--secondary-color);
+    border: 0.2rem solid #fb9752;
 }
 
 .totalText {
@@ -67,13 +54,30 @@
 }
 
 .removeBtn{
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     font-size: 16px;
+    border: 1px solid #fb9752; */
+    border: 0.2rem solid #9b5221;
+    background-color: var(--primary-color);
+    color: #9b5221;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    box-shadow: 3px 3px 0px 1px #9b5221;
+    transition: all 0.2s ease-in-out;
 }
+.removeBtn:hover {
+    transform: scale(0.9);
+    box-shadow: 1px 1px 0px 1px #fb9752;
+    color: #9b5221;
+  }
 
 .image {
     height: 65%;
     object-fit: contain;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fb9752;
 }
 
 h1,h3{

@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 
 // Import toastify css file
 import "react-toastify/dist/ReactToastify.css";
+import styles from "../styles/Navbar.module.css";
 
 // toast-configuration method,
 // it is compulsory method.
@@ -15,12 +16,12 @@ export default function Signup(){
 
     return(
         <>
+        <div className={styles.signinFrom}>
         <h1>Sign Up!</h1>
-        <div className="section">
-
+        
         {/* Form for signup */}
             <form onSubmit={handleSignUpSubmit}>
-                <Row label="">
+                <Row formLabel="Name">
                         <input className="input name"
                                 placeholder="Enter Name"
                                 ref = {titleRef}
@@ -30,7 +31,7 @@ export default function Signup(){
                         />
                 </Row >
 
-                <Row label="">
+                <Row formLabel="Email">
                         <input className="input content"
                                 placeholder="Enter Email"
                                 required
@@ -39,7 +40,7 @@ export default function Signup(){
                         />
                 </Row >
          
-                <Row label="">
+                <Row formLabel="Password">
                         <input className="input password"
                                 placeholder="Enter Password"
                                 required
@@ -49,7 +50,9 @@ export default function Signup(){
                 </Row >
                 <br/>
                 <br/>
-                <button className = "btn">Sign Up</button>
+                <div className={styles.signBtn}>
+                    <button className={styles.button}>Sign Up</button>
+                </div>
             </form>
                      
         </div>
@@ -59,12 +62,13 @@ export default function Signup(){
     }
     //Row component to introduce a new row section in the form
 function Row(props){
-    const{label} = props;
+    const{formLabel} = props;
     return(
         <>
-        <label>{label}<br/></label>
+        <label>{formLabel}<br/></label>
         <br/>
         {props.children}
+        <br/><br/>
         </>
     )
 }

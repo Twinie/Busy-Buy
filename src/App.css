@@ -1,17 +1,21 @@
 body{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9b5221;
   box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 .App {
   text-align: center;
 }
 
 input{
-  width: 400px;
-  /* height:40px; */
+  width: 100%;
+  box-sizing: border-box;
   padding: 20px;
-  background-color: rgb(143, 214, 143);
+  background-color: #fb9752;
   border: none;
   border-radius: 10px;
 }
@@ -19,16 +23,8 @@ input{
 button{
   /* width: 100px; */
   /* height: 40px; */
-  border-radius: 8px;
+  /* border-radius: 8px; */
   border: 1px solid #000;
-  background-color: rgb(143, 214, 143);
+  background-color: #fb9752;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

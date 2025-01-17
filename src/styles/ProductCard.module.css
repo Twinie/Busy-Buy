@@ -1,31 +1,34 @@
 .itemCard {
-    margin: 1rem;
+    margin: 3rem;
     display: flex;
     flex-direction: column;
     min-width: 20rem;
-    background-color: #fff;
     padding: 1rem;
     font-family: 'Unbounded', sans-serif;
-    border: 0.4rem solid #000;
-    box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 1);
+    border: 0.2rem solid #fb9752;
+    border-radius: 20px;
+    box-shadow: -1px -2px 8px #fb9752;
 }
 
 .itemName {
+    margin-top: 20px;
     font-size: 1.9rem;
     font-weight: 800;
-    color: var(--secondary-color);
+    color: #9b5221;
     margin-bottom: 1rem;
 }
 
 .image {
     height: 65%;
     object-fit: contain;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fb9752;
 }
 
 .itemPrice {
     font-size: 1.9rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: #9b5221;
 }
 
 .itemButtonsWrapper {
@@ -37,20 +40,21 @@
 }
 
 .itemButton {
-    border: 0.2rem solid #000;
+    border: 0.2rem solid #9b5221;
+    width: 100%;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: #9b5221;
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+    box-shadow: 3px 3px 0px 1px #9b5221;
     transition: all 0.2s ease-in-out;
 }
 
 .itemButton:hover {
     transform: scale(0.9);
-    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 1);
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    box-shadow: 1px 1px 0px 1px #9b5221;
+    /* background-color: #9b5221; */
+    color: #9b5221;
 }

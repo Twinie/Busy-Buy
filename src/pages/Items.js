@@ -6,7 +6,7 @@ function Items() {
   return (
     <div className={styles.wrapper}>
           {search.length > 0 ? items.map((item) => {
-            if(item.name.includes(search)){
+            if(item.name.toLowerCase().includes(search.toLowerCase())){
               // console.log(item.name, search)
               return <ItemCard
               key={item.id}

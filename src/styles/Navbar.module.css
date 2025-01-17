@@ -1,36 +1,73 @@
 .container {
+  box-sizing: border-box;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    /* background-color: #e4dddd; */
+    /* color: var(--primary-color); */
     padding: 1rem;
+    border-bottom: 0.2rem solid #fb9752;
+  }
+  .links{
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    width:100px;
+    height: auto;
   }
   .buttonsWrapper {
     margin-block: 1rem;
     text-decoration: none;
     display: flex;
-    /* justify-content: flex-end; */
+    /* margin: auto; */
+    justify-content: center;
     align-items: flex-end;
   }
   
   .button {
-    border: 0.15rem solid #000;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    margin: 0 30px;
+    border: 0.15rem solid #fb9752;
+    white-space: nowrap;
+    background-color: #fff;
+    color: #fb9752;
     font-size: 1.2rem;
     font-weight: 400;
     cursor: pointer;
     padding: 0.3rem 0.5rem;
-    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 0px 1px #fb9752;
     transition: all 0.2s ease-in-out;
     margin-left: 1rem;
   }
   
   .button:hover {
     transform: scale(0.9);
-    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 1);
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    box-shadow: 1px 1px 0px 1px #fb9752;
+    color: #9b5221;
+  }
+
+  form{
+    width: 550px;
+    box-sizing: border-box;
   }
   
+  .signinFrom{
+    width: 550px;
+    /* box-sizing: border-box; */
+    margin: auto;
+    border: 2px solid #fb9752;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .signBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signUpBtn{
+    text-decoration: none;
+    color: #9b5221;
+  }

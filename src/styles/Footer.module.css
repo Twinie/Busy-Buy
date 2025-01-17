@@ -1,0 +1,27 @@
+.footer{
+    /* position: absolute; */
+    /* height: 100px; */
+    bottom: 0;
+    width: 100%;
+    /* background-color: aqua; */
+    border-top: 0.2rem solid #fb9752;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* left: 0;
+    top: 100%; */
+}
+
+.sections{
+    display: flex;
+}
+
+.ul{
+ list-style: none;
+ padding-right: 30px;
+}
+
+.li{
+ padding: 10px;
+ font-size: 20px;
+}

@@ -72,7 +72,8 @@ useEffect(()=> {
 onSnapshot(collection(db, "cart"), (snapShot)=> {
     let totalPrice = 0
 
- const cartTotal = snapShot.docs.map((doc) => {
+//  const cartTotal = 
+ snapShot.docs.map((doc) => {
     // console.log(doc.data().price )
             totalPrice += (doc.data().price*doc.data().qty);
             return totalPrice 
